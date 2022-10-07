@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-
+import MovieList from './movie_stateless';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
-    <h1>branch master</h1>
+    <MovieList />
     </>
   );
 }
