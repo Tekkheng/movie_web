@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import SearchMovie from "./Component/searchMovie";
+import SearchMovie from "./FunctionalComponent /searchMovie";
 
 const MovieList = () =>{
     return(
@@ -10,4 +10,5 @@ const MovieList = () =>{
 
     )
 }
+// rfce
 export default MovieList;

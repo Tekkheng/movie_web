@@ -20,7 +20,7 @@ const SearchMovie = ()=>{
         <>
         <div className="container">
             <div className="row mt-4">
-                <h1 className="">Movie List 2</h1>
+                <h1 className="">Movie List</h1>
             </div>
             <div className="row mt-3">
                 <div class="col-md-8">

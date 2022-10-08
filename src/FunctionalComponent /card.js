@@ -1,7 +1,6 @@
 import React, { useState,useRef } from 'react'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Detail from './movie_detail';
 
 const Card=(props)=>{
     const [show, setShow] = useState(false);
@@ -63,6 +62,7 @@ const Card=(props)=>{
                                     <li className="list-group-item">Writer : {d.Writer}</li>
                                     <li className="list-group-item">Actors : {d.Actors}</li>
                                     <li className="list-group-item">Rating : {d.Ratings[0].Value}</li>
+                                    <li className="list-group-item">Genre: {d.Genre}</li>
                                     <li className="list-group-item">Plot : {d.Plot}</li>
                                 </div>
                             </div>
@@ -72,9 +72,6 @@ const Card=(props)=>{
                     <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
-                    </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        Save Changes
                     </Button>
                     </Modal.Footer>
                 </Modal>
