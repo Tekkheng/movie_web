@@ -37,13 +37,13 @@ class Tcard extends React.Component{
                     {this.props.data.map((dat)=>{
                         return(
                         <div className="col-md-3">
-                            <div className="card mt-3" style={{width: 250}}>
+                            <div className="card mt-3 bg bg-transparent" style={{width: 250,border:"1px solid transparent"}}>
                                 <img src={dat.Poster} className="card-img-top" alt="..."/>
                                 <div className="card-body">
                                     <h5 className="card-title">{dat.Title}</h5>
                                     <h6 className="card-subtitle">{dat.Year}</h6>
                                     <p>Lorem ipsum dolor sit amet.</p>
-                                    <button className="btn btn-danger" onClick={this.ShowModal.bind(this, dat.imdbID)}>Details</button>
+                                    <button className="btn bg-transparent btn-outline-primary" onClick={this.ShowModal.bind(this, dat.imdbID)}>Details</button>
                                 </div>
                             </div>
                         </div>

@@ -30,13 +30,13 @@ const Card=(props)=>{
                 return (
                     <>
                     <div className="col-md-3">
-                        <div className="card mt-3" style={{width: 250}}>
+                        <div className="card mt-3 bg bg-transparent" style={{width: 250,border:"1px solid transparent"}}>
                             <img src={t.Poster} className="card-img-top" alt="..."/>
                             <div className="card-body">
                                 <h5 className="card-title">{t.Title}</h5>
                                 <h6 className="card-subtitle">{t.Year}</h6>
                                 <p>Lorem ipsum dolor sit amet.</p>
-                                <button className="btn btn-danger" onClick={handleShow.bind(this,t.imdbID)} ref={tngkp}>Details</button>
+                                <button className="btn bg-transparent btn-outline-primary" onClick={handleShow.bind(this,t.imdbID)} ref={tngkp}>Details</button>
                             </div>
                         </div>
                     </div>

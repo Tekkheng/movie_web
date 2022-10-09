@@ -4,7 +4,9 @@ import Search from "./ClassComponent/searchFilm";
 class Movie extends React.Component{
     render(){
         return(
-            <Search />
+            <div className="container">
+                <Search />
+            </div>
         )
     }
 }
